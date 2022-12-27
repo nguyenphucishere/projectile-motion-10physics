@@ -197,7 +197,6 @@ export default {
       alpha: 45,
       m: 0,
       calculator: null,
-      helper: null
     }
   },
   computed: {
@@ -266,7 +265,7 @@ export default {
     },
     setExpressions(calc, arr) {
       arr.forEach((item) => {
-        //item.secret = true
+        item.secret = true
         calc.setExpression(item)
       })
     },
